@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Synonym words</title>
+</head>
+<body>
+<form name="form1" action="/synonymwords/" method="post">
+    <div>
+        <input name="word" type="text" id="word" value="关键词" size="50"
+          οnmοuseοver=this.focus();this.select();
+          οnclick="if(value==defaultValue){value='';this.style.color='#000'}"
+          onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999" />
+        <br><br>
+        <select>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+        </select>
+        <br><br>
+        <input type="submit", size="10", value="搜索同义词"/>
+    </div>
+    <div>
+        {% for key,value in synonyms_lists.items%}
+            <p>{{ key }}：{{ value }}</p>
+        {% endfor %}
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Similar words</title>
+</head>
+<body>
+<!--
+<h1>{{ hello }}</h1>    <!-变量使用双括号->-->
+<form action="/similarwords/" method="post">
+    <div>
+        <input name="word1" type="text" id="word1" value="关键词" size="30"
+          οnmοuseοver=this.focus();this.select();
+          οnclick="if(value==defaultValue){value='';this.style.color='#000'}"
+          onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999" />
+        <br><br>
+        <input name="word2" type="text" id="word2" value="关键词" size="30"
+          οnmοuseοver=this.focus();this.select();
+          οnclick="if(value==defaultValue){value='';this.style.color='#000'}"
+          onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999" />
+        <br><br>
+        <input type="submit", size="10", value="相似度计算"/>
+    </div>
+</form>
+<div>
+    <h1>两个词汇的相似度为：</h1>
+    <br>
+    <h1>{{ similarity_words }}</h1>
+</div>
+</body>
+</html>
+
+{#<script>#}
+{#function myFunction()#}
+{#{#}
+{#var keyword=document.getElementById("word").value;#}
+{#if(keyword=="")#}
+{#	{#}
+{#	alert("请输入一个关键词！");#}
+{#	}#}
+{#}#}
+{#</script>#}

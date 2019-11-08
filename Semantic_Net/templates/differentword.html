@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Different word</title>
+</head>
+<body>
+<form action="/differentword/" method="post">
+    <div>
+        <input name="list" type="text" id="list" value="词汇列表" size="50"
+          οnmοuseοver=this.focus();this.select();
+          οnclick="if(value==defaultValue){value='';this.style.color='#000'}"
+          onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999" />
+        <br><br>
+        <input type="submit", size="10", value="求解异常词"/>
+    </div>
+</form>
+<div>
+    <h1>该词汇列表中不同的词是：</h1>
+    <br>
+    <h1>{{ differet_word }}</h1>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Similar lists</title>
+</head>
+<body>
+<form action="/similarlists/" method="post">
+    <div>
+        <input name="list1" type="text" id="list1" value="词汇列表" size="50"
+          οnmοuseοver=this.focus();this.select();
+          οnclick="if(value==defaultValue){value='';this.style.color='#000'}"
+          onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999" />
+        <br><br>
+        <input name="list2" type="text" id="list2" value="词汇列表" size="50"
+          οnmοuseοver=this.focus();this.select();
+          οnclick="if(value==defaultValue){value='';this.style.color='#000'}"
+          onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999" />
+        <br><br>
+        <input type="submit", size="10", value="相似度计算"/>
+    </div>
+</form>
+<div>
+    <h1>两个词汇列表的相似度为：</h1>
+    <br>
+    <h1>{{ similarity_lists }}</h1>
+</div>
+</body>
+</html>
